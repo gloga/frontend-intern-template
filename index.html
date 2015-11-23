@@ -7,7 +7,7 @@
     <meta name="description" content="Selekcija 10/2015">
     <meta meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -19,24 +19,27 @@
 
 
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-10 top-left">
-				<h3 id="lm">Latest mentions</h3>
+		<div class="row" id="top">
+			<div class="col-sm-10 top-left" id="top-latest">
+				<h3 class="lm">Latest mentions</h3>
 				<div class="poster-info">
 					<div class="avatar-lg">
 						<img src="" alt="">
 					</div>
-					<p class="handle-lg"></p>
-					<div class="post-date-lg"></div>
+					<p class="handle-lg" id="handle-latest-top">
+						@USERNAME
+					</p>
+					<div class="post-date-lg">
+						21.11.2015.
+					</div>
 				</div>
 				<div class="post-lg">
 					<p class="post-text-lg"></p>
 					<img class="post-img-lg" src="" alt="">
 				</div>
 			</div>
-			<div class="col-sm-7 top-mid">
+			<div class="col-sm-7 top-mid" id="mid-latest">
 				<div id="mid-post-1">
-					
 					<div class="poster-info">
 						<div class="avatar-sm">
 							<img src="" alt="">
@@ -64,8 +67,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-7 top-right">
-				<h3 id="mpt">Most popular today</h3>
+			<div class="col-sm-7 top-right" id="most-pop">
+				<h3 class="mpt">Most popular today</h3>
 				<div class="poster-info">
 					<div class="avatar-sm">
 						<img src="" alt="">
@@ -81,11 +84,15 @@
 				<p>Powered by: Design Studio</p>				
 			</div>
 		</div>
-		<div class="row">
+		<div class="row footer navbar-fixed-bottom" id="bottom">
 			<div class="col-sm-5 bottom-left">
 				<h3 class="bottom-headline">Total mentions:</h3>
-				<p class="tm-num"></p>
-				<p>Konferencion logo</p>
+				<p class="total-num" id="total-ment">
+					
+				</p>
+				<p class="bottom-headline">
+					Konferencion logo
+				</p>
 			</div>
 			<div class="col-sm-10 bottom-mid">
 				<h3 class="bottom-headline">Mention analytics:</h3>
@@ -97,22 +104,22 @@
 					<div class="avatar-sm">
 						<img src="" alt="">
 					</div>
-					<p class="top-site-name"></p>
-					<p class="top-site-num"></p>
+					<p class="top-site-name" id="top-1-name"></p>
+					<p class="top-site-num" id="top-1-num"></p>
 				</div>
 				<div class="top-2">
 					<div class="avatar-sm">
 						<img src="" alt="">
 					</div>
-					<p class="top-site-name"></p>
-					<p class="top-site-num"></p>
+					<p class="top-site-name" id="top-2-name"></p>
+					<p class="top-site-num" id="top-2-num"></p>
 				</div>
 				<div class="top-3">
 					<div class="avatar-sm">
 						<img src="" alt="">
 					</div>
-					<p class="top-site-name"></p>
-					<p class="top-site-num"></p>
+					<p class="top-site-name" id="top-3-name"></p>
+					<p class="top-site-num" id="top-3-num"></p>
 				</div>
 			</div>
 		</div>
