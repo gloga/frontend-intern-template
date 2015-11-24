@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js"  lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="Selekcija 10/2015">
     <meta meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -20,106 +20,138 @@
 
 	<div class="container-fluid">
 		<div class="row" id="top">
-			<div class="col-sm-10 top-left" id="top-latest">
+			<div class="col-md-10 top-left" id="top-latest">
 				<h3 class="lm">Latest mentions</h3>
 				<div class="poster-info">
-					<div class="avatar-lg">
-						<img src="" alt="">
-					</div>
-					<p class="handle-lg" id="handle-latest-top">
-						@USERNAME
+					<div class="avatar-lg" id="avatar-latest-left"></div>
+					<p class="handle-lg" id="handle-latest-left">
+						
 					</p>
-					<div class="post-date-lg">
-						21.11.2015.
+					<div class="post-date-lg" id="date-latest-left">
+						
 					</div>
 				</div>
-				<div class="post-lg">
-					<p class="post-text-lg"></p>
-					<img class="post-img-lg" src="" alt="">
-				</div>
-			</div>
-			<div class="col-sm-7 top-mid" id="mid-latest">
-				<div id="mid-post-1">
-					<div class="poster-info">
-						<div class="avatar-sm">
-							<img src="" alt="">
-						</div>
-						<p class="handle-sm"></p>
-						<div class="post-date-sm"></div>
-					</div>
-					<div class="post-sm">
-						<p class="post-text-sm"></p>
-						<img class="post-img-sm" src="" alt="">
-					</div>
-				</div>
-				<hr>
-				<div id="mid-post-2">
-					<div class="poster-info">
-						<div class="avatar-sm">
-							<img src="" alt="">
-						</div>
-						<p class="handle-sm"></p>
-						<div class="post-date-sm"></div>
-					</div>
-					<div class="post-sm">
-						<p class="post-text-sm"></p>
-						<img class="post-img-sm" src="" alt="">
-					</div>
+				<div class="post-lg clear-float">
+					<p class="highlight headline-lg" id="headline-left">
+						
+					</p>
+					<p class="post-text-lg" id="post-text-latest-left">
+						
+					</p>
+					<img class="post-img" id="post-img-latest-left" src="" alt=""> 
 				</div>
 			</div>
-			<div class="col-sm-7 top-right" id="most-pop">
-				<h3 class="mpt">Most popular today</h3>
-				<div class="poster-info">
-					<div class="avatar-sm">
-						<img src="" alt="">
+			<div class="col-md-7 top-mid" id="mid-latest">
+				<div class="mid-post-1">
+					<div class="poster-info">
+						<div class="avatar-sm" id="avatar-mid-1"></div>
+						<p class="handle-sm" id="handle-mid-1">
+							
+						</p>
+						<div class="post-date-sm" id="date-mid-1">
+
+						</div>
 					</div>
-					<p class="handle-sm"></p>
-					<div class="post-date-sm"></div>
+					<div class="post-sm clear-float">
+						<p class="highlight headline" id="headline-mid-1">
+							
+						</p>
+						<p class="post-text-sm" id="post-text-mid-1">
+							
+						</p>
+						<img class="post-img" id="post-img-mid-1" src="" alt="">
+					</div>
 				</div>
-				<div class="post-sm">
-					<p class="post-text-sm"></p>
-					<img class="post-img-sm" src="" alt="">
+				<div class="separator"></div>
+				<div class="mid-post-2">
+					<div class="poster-info">
+						<div class="avatar-sm" id="avatar-mid-2"></div>
+						<p class="handle-sm" id="handle-mid-2">
+							
+						</p>
+						<div class="post-date-sm" id="date-mid-2">2
+
+						</div>
+					</div>
+					<div class="post-sm clear-float">
+						<p class="highlight headline" id="headline-mid-2">
+							
+						</p>
+						<p class="post-text-sm" id="post-text-mid-2">
+							
+						</p>
+						<img class="post-img" id="post-img-mid-2" src="" alt="">
+					</div>
 				</div>
-				<hr>
-				<p>Powered by: Design Studio</p>				
+			</div>
+			<div class="col-md-7 top-right" id="most-pop">
+				<div class="most-pop">
+					<h3 class="mpt">Most popular today</h3>
+					<div class="poster-info">
+						<div class="avatar-sm" id="avatar-mpt"></div>
+						<p class="handle-mpt" id="handle-mpt">
+							
+						</p>
+						<div class="post-date-mpt" id="date-mpt">
+
+						</div>
+					</div>
+					<div class="post-mpt clear-float">
+						<p class="highlight headline">
+							
+						</p>
+						<p class="post-text-mpt" id="post-text-mpt">
+							
+						</p>
+						<img class="post-img" id="post-img-mpt" src="" alt="">
+					</div>
+				</div>
+				<div class="separator-mpt"></div>
+				<p class="powered">Powered by: Design Studio</p>				
 			</div>
 		</div>
-		<div class="row footer navbar-fixed-bottom" id="bottom">
-			<div class="col-sm-5 bottom-left">
-				<h3 class="bottom-headline">Total mentions:</h3>
-				<p class="total-num" id="total-ment">
-					
-				</p>
-				<p class="bottom-headline">
-					Konferencion logo
-				</p>
-			</div>
-			<div class="col-sm-10 bottom-mid">
-				<h3 class="bottom-headline">Mention analytics:</h3>
-				<img class="analytics-img"src="" alt="">
-			</div>
-			<div class="col-sm-9 bottom-right">
-				<h3 class="bottom-headline">Top websites list</h3>
-				<div class="top-1">
-					<div class="avatar-sm">
-						<img src="" alt="">
-					</div>
-					<p class="top-site-name" id="top-1-name"></p>
-					<p class="top-site-num" id="top-1-num"></p>
+		<div class="row" id="footer">
+			<div class="container-fluid bottom">
+				<div class="col-sm-5 bottom-left">
+					<h3 class="bottom-headline">Total mentions:</h3>
+					<p class="total-num" id="total-ment">
+						
+					</p>
+					<img class="bottom-img" id="logo-img" src="static/pics/logo.png" height="78" width="277" alt="">
 				</div>
-				<div class="top-2">
-					<div class="avatar-sm">
-						<img src="" alt="">
-					</div>
-					<p class="top-site-name" id="top-2-name"></p>
-					<p class="top-site-num" id="top-2-num"></p>
+				<div class="col-sm-10 bottom-mid">
+					<h3 class="bottom-headline">Mention analytics:</h3>
+					<img class="bottom-img"src="static/pics/graph.png" alt="">
 				</div>
-				<div class="top-3">
-					<div class="avatar-sm">
-						<img src="" alt="">
+				<div class="col-sm-9 bottom-right">
+					<h3 class="bottom-headline">Top websites list</h3>
+					<div class="top-1">
+						<div class="avatar-sm" id="top-1-avatar"></div>
+						<p class="top-site-text" id="top-1-name">
+							
+						</p>
+						<p class="top-site-num clear-float" id="top-1-num">
+							
+						</p>
 					</div>
-					<p class="top-site-name" id="top-3-name"></p>
-					<p class="top-site-num" id="top-3-num"></p>
+					<div class="top-2">
+						<div class="avatar-sm" id="top-2-avatar"></div>
+						<p class="top-site-text" id="top-2-name">
+							
+						</p>
+						<p class="top-site-num clear-float" id="top-2-num">
+							
+						</p>
+					</div>
+					<div class="top-3">
+						<div class="avatar-sm" id="top-3-avatar"></div>
+						<p class="top-site-text" id="top-3-name">
+						
+						</p>
+						<p class="top-site-num clear-float" id="top-3-num">
+							
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -131,9 +163,8 @@
 document.write("<script async src='http://HOST:3002/browser-sync/browser-sync-client.2.10.0.js'><\/script>".replace("HOST", location.hostname));
 //]]></script>
 
+<script src="static/js/frontend.js"></script>
 <script src="static/js/plugins.js"></script>
 <script src="static/js/main.js"></script>
-<!-- OR -->
-<!--<script src="static/js/frontend.js"></script>-->
 </body>
 </html>
